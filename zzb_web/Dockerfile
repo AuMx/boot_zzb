@@ -19,7 +19,7 @@ RUN cd /tmp/app && mvn clean package -X &&\
 ENV LANG="zh_CN.UTF-8"
 
 #设置环境变量
-ENV spring.profiles.active="prod"
+ENV spring.profiles.active="pro"
 
 # 日志挂载
 VOLUME ["/logs"]

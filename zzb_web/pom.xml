@@ -9,7 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.zzb</groupId>
     <artifactId>zzb_web</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <profiles>
         <profile>
@@ -100,8 +103,6 @@
     </dependencies>
 
     <build>
-        <!-- 指定最终生成包的文件名-->
-        <finalName>zzb_web</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
