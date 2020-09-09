@@ -9,7 +9,7 @@ MAINTAINER zzb
 ADD . /tmp/app/
 
 # 构建应用，串写指令，压缩镜像大小。
-RUN cd /tmp/app && mvn clean package -f zzb_web/pom.xml &&\
+RUN cd /tmp/app && mvn clean package &&\
     # 拷贝编译结果到指定目录
     mv /tmp/app/target/*.jar /var/lib/app.jar &&\
     #清理编译痕迹
